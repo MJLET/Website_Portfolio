@@ -69,18 +69,67 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="border-t border-line">
-  <div class="mx-auto grid max-w-6xl gap-10 px-5 py-20 lg:grid-cols-[1fr_1.6fr]">
-    <!-- Left Column: Just the Image -->
-    <div>
-      <img src="Images/formal-attire.jpg" style="margin-top: 1rem; margin-left: 1rem;" width="792" height="764" alt="Marvin Jake L. Letigio, smiling, in a navy blazer and red tie" class="glow h-44 w-44 rounded-2xl object-cover object-top" >
+<section id="about" class="border-t border-line relative overflow-hidden">
+  <!-- Faint decorative code background -->
+  <div class="absolute -right-20 top-10 opacity-5 pointer-events-none select-none text-[15rem] font-mono font-bold text-mist" aria-hidden="true">
+    &lt;/&gt;
+  </div>
+
+  <div class="mx-auto grid max-w-6xl items-center gap-16 px-5 py-24 md:grid-cols-[1fr_1.2fr] lg:gap-24">
+    
+    <!-- Left Column: Stylized Image & Floating Elements -->
+    <!-- Adjusted max-w to make the image smaller: max-w-[18rem] on mobile, lg:max-w-[22rem] on desktop -->
+    <div class="relative mx-auto w-full max-w-[18rem] shrink-0 md:mx-0 lg:max-w-[22rem]">
+      <!-- Organic Blob Backgrounds -->
+      <div class="absolute -inset-4 z-0 bg-[#0f172a] transform -rotate-6 transition-transform hover:rotate-0 duration-500 shadow-2xl" style="border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;"></div>
+      <div class="absolute -inset-1 z-0 bg-panel transform rotate-3" style="border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;"></div>
+      
+      <!-- Main Image -->
+      <img src="Images/formal-attire.jpg" alt="Marvin Jake L. Letigio in a navy suit adjusting his cuff" class="relative z-10 w-full h-auto object-cover object-top drop-shadow-xl" style="border-radius: 45% 55% 40% 60% / 55% 45% 60% 40%;">
+      
+      <!-- Floating Glassmorphism Elements -->
+
+
+      <!-- Code Icon (Top Right) -->
+      <div class="absolute -right-4 top-16 z-20 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 font-mono text-lg font-bold text-white shadow-xl ring-4 ring-panel sm:-right-8">
+        &lt;/&gt;
+      </div>
+
+      <!-- Code Icon (Bottom Left) -->
+      <div class="absolute -left-2 bottom-12 z-20 flex h-12 w-12 items-center justify-center rounded-xl bg-[#1e1e2e] font-mono text-sm font-bold text-white shadow-xl ring-2 ring-line sm:-left-8">
+        &lt;/&gt;
+      </div>
+
+      <!-- UI Badge (Bottom Right) -->
+      <div class="absolute -right-6 bottom-20 z-20 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-tr from-cyan to-blue-500 font-head text-lg font-bold text-ink shadow-xl ring-2 ring-panel sm:-right-10">
+        UI
+      </div>
     </div>
     
-    <!-- Right Column: Heading + Paragraphs -->
-    <div class="max-w-2xl space-y-5 text-mist">
-      <h2 class="mt-3 font-head text-3xl font-bold text-fg">Software that fixes real IT problems.</h2>
-      <p>I’m a fourth-year BSIT student who enjoys the unglamorous side of technology: the lab computer that won’t boot, the technician who finds out too late. My training in IT infrastructure means I start with the problem, then build the software around it.</p>
-      <p>I care about responsive layouts, clear hierarchy, and interfaces that need no manual. I’m looking for a junior Web Developer or UI/UX Designer role where I can do both.</p>
+    <!-- Right Column: Text Content -->
+    <div class="relative z-10 max-w-2xl space-y-6">
+      <div class="space-y-4">
+        <!-- Section Label -->
+        <p class="font-mono text-sm font-medium tracking-widest text-mist uppercase">
+          01 // About Me
+        </p>
+
+        <!-- Subheading Pill -->
+        <div class="inline-block rounded-full bg-cyan/10 px-4 py-1.5 font-head text-sm font-bold tracking-wide text-cyan ring-1 ring-inset ring-cyan/20">
+          HELLO, I'M A BSIT STUDENT & DEVELOPER
+        </div>
+
+        <!-- Main Heading -->
+        <h2 class="font-head text-4xl font-bold leading-tight text-fg sm:text-5xl">
+          Software that fixes <span class="text-cyan">real IT problems.</span>
+        </h2>
+      </div>
+
+      <!-- Paragraphs -->
+      <div class="space-y-5 text-lg text-mist leading-relaxed">
+        <p>I’m a fourth-year BSIT student who enjoys the unglamorous side of technology: the lab computer that won’t boot, the technician who finds out too late. My training in IT infrastructure means I start with the problem, then build the software around it.</p>
+        <p>I care about responsive layouts, clear hierarchy, and interfaces that need no manual. I’m looking for a junior Web Developer or UI/UX Designer role where I can do both.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -91,18 +140,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
     <h2 class="font-head text-3xl font-bold">Featured Projects</h2>
 
     <article class="mt-10 rounded-xl border border-line bg-panel p-6 sm:p-10">
-      <h3 class="font-head text-2xl font-bold">AEGIS: an AI diagnostic system for a computer lab</h3>
-      <p class="mt-2 text-sm text-mist">Capstone · Cebu Eastern College, Incorporated · IT Department Computer Laboratory</p>
-      <p class="mt-5 max-w-3xl text-mist">AEGIS is a client-server system that checks lab PCs automatically, shows their health live, and predicts which machines will need maintenance before they break.</p>
+      <h3 class="font-head text-2xl font-bold">AEGIS: Cloud-Based Diagnostics & Predictive Analytics</h3>
+      <p class="mt-2 text-sm text-mist">Capstone · Cebu Eastern College, Incorporated · College Teachers & Education Instructors</p>
+      <p class="mt-5 max-w-3xl text-mist">AEGIS is a cloud-based web application that checks PCs automatically using agent technology, shows their health live, and predicts which machines will need maintenance before they break.</p>
 
       <dl class="mt-10 grid gap-x-12 gap-y-8 md:grid-cols-2">
         <div>
           <dt class="font-head font-medium text-cyan">The problem</dt>
-          <dd class="mt-2 text-mist">Technicians checked lab computers one by one. Faults surfaced during class, and maintenance was reactive, with no record of which machines kept failing.</dd>
+          <dd class="mt-2 text-mist">Faults surfaced during classes, disrupting education instructors. Maintenance was reactive, with no reliable record of which machines kept failing, requiring manual checks one by one.</dd>
         </div>
         <div>
           <dt class="font-head font-medium text-cyan">The solution</dt>
-          <dd class="mt-2 text-mist">A lightweight client on each PC reports hardware and software diagnostics to a central server. A dashboard shows live status, and predictive analytics flags machines likely to need service.</dd>
+          <dd class="mt-2 text-mist">Agent technology installed on each PC reports hardware and software diagnostics to a cloud-based server. A web dashboard shows live status, and predictive analytics flags machines likely to need service.</dd>
         </div>
         <div>
           <dt class="font-head font-medium text-cyan">My role</dt>
@@ -111,7 +160,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
         <div>
           <dt class="font-head font-medium text-cyan">Tech stack</dt>
           <dd class="mt-3 flex flex-wrap gap-2 text-sm">
-            <!-- Replace with your actual stack -->
             <span class="rounded-md border border-line px-2.5 py-1">Figma</span>
             <span class="rounded-md border border-line px-2.5 py-1">HTML5 / CSS3 / JavaScript</span>
             <span class="rounded-md border border-line px-2.5 py-1">Tailwind CSS</span>
@@ -126,17 +174,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
       <div class="mt-10 grid gap-8 border-t border-line pt-8 md:grid-cols-2">
         <div>
           <h4 class="font-head font-medium">Design system</h4>
-          <p class="mt-2 text-mist">One three-state colour code (healthy, watch, at risk) used across every workstation tile, chart and alert, so a technician reads the lab’s condition at a glance. Dashboards put the machines needing action first.</p>
+          <p class="mt-2 text-mist">One three-state colour code (healthy, watch, at risk) used across every workstation tile, chart and alert, so instructors and IT staff can read a system's condition at a glance. Dashboards put the machines needing action first.</p>
         </div>
         <div>
           <h4 class="font-head font-medium">Technical integration</h4>
-          <p class="mt-2 text-mist">Client agents send diagnostics to the server in real time. The dashboard reads that stream for live monitoring and feeds the history into the predictive model for maintenance forecasts.</p>
+          <p class="mt-2 text-mist">Software agents send diagnostics to the cloud server in real time. The web application reads that stream for live monitoring and feeds the history into the predictive model for maintenance forecasts.</p>
         </div>
       </div>
 
       <div class="mt-8 rounded-lg bg-ink p-5">
         <h4 class="font-head font-medium">Impact</h4>
-        <p class="mt-2 text-mist">Moves lab maintenance from reactive to planned: faster fault discovery, fewer surprise failures, one view of the whole lab. <span class="text-fg">Automated manual diagnostic workflows using AI, cutting issue detection time from 15 minutes down to 3–5 minutes while reallocating human effort toward strategic initiatives.
+        <p class="mt-2 text-mist">Moves maintenance from reactive to planned: faster fault discovery, fewer surprise failures during instruction, and one view of all systems. <span class="text-fg">Automated manual diagnostic workflows using agent technology, cutting issue detection time from 15 minutes down to 3–5 minutes while reallocating human effort toward strategic initiatives.</span></p>
       </div>
       <!-- This is available if the system has a case study, live demo, or source code to share. Uncomment if needed.
       <div class="mt-6 flex gap-5 text-sm">
@@ -145,7 +193,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
         <a class="text-cyan hover:underline" href="#">Source code</a>
       </div> -->
     </article>
-
+<!-- Additional projects can be added here in the same format as the first project. 
     <div class="mt-6 grid gap-6 md:grid-cols-2">
       <div class="rounded-xl border border-dashed border-line p-8">
         <h3 class="font-head text-xl font-bold">Web app project</h3>
@@ -156,18 +204,18 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
         <p class="mt-2 text-mist">Your third project goes here: the research, the wireframes, and the final prototype.</p>
       </div>
     </div>
-  </div>
+  </div>-->
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="border-t border-line">
   <div class="mx-auto max-w-6xl px-5 py-20">
     <h2 class="font-head text-3xl font-bold">Skills</h2>
-    <p class="mt-3 max-w-xl text-mist">Design and code, so one person can take a feature from sketch to working page.</p>
+    <p class="mt-3 max-w-xl text-mist">Bridging the gap between software development and real-world IT infrastructure.</p>
     <div class="mt-10 divide-y divide-line border-y border-line">
       <div class="grid gap-3 py-6 md:grid-cols-[14rem_1fr]">
         <h3 class="font-head font-medium">UI/UX design</h3>
-        <p class="flex flex-wrap gap-2 text-sm text-mist"><span class="rounded-md bg-panel px-3 py-1">Figma</span><span class="rounded-md bg-panel px-3 py-1">Wireframing</span><span class="rounded-md bg-panel px-3 py-1">Prototyping</span><span class="rounded-md bg-panel px-3 py-1">User research</span><span class="rounded-md bg-panel px-3 py-1">Information architecture</span><span class="rounded-md bg-panel px-3 py-1">Responsive design</span></p>
+        <p class="flex flex-wrap gap-2 text-sm text-mist"><span class="rounded-md bg-panel px-3 py-1">Figma</span><span class="rounded-md bg-panel px-3 py-1">Adobe Photoshop</span><span class="rounded-md bg-panel px-3 py-1">Wireframing</span><span class="rounded-md bg-panel px-3 py-1">Prototyping</span><span class="rounded-md bg-panel px-3 py-1">User research</span><span class="rounded-md bg-panel px-3 py-1">Responsive design</span></p>
       </div>
       <div class="grid gap-3 py-6 md:grid-cols-[14rem_1fr]">
         <h3 class="font-head font-medium">Front-end development</h3>
@@ -176,6 +224,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
       <div class="grid gap-3 py-6 md:grid-cols-[14rem_1fr]">
         <h3 class="font-head font-medium">Back-end and databases</h3>
         <p class="flex flex-wrap gap-2 text-sm text-mist"><span class="rounded-md bg-panel px-3 py-1">Node.js</span><span class="rounded-md bg-panel px-3 py-1">PHP</span><span class="rounded-md bg-panel px-3 py-1">REST APIs</span><span class="rounded-md bg-panel px-3 py-1">SQL</span><span class="rounded-md bg-panel px-3 py-1">Client-server architecture</span></p>
+      </div>
+      <div class="grid gap-3 py-6 md:grid-cols-[14rem_1fr]">
+        <h3 class="font-head font-medium">IT Support & Infrastructure</h3>
+        <p class="flex flex-wrap gap-2 text-sm text-mist"><span class="rounded-md bg-panel px-3 py-1">Hardware Troubleshooting</span><span class="rounded-md bg-panel px-3 py-1">Windows OS Installation</span><span class="rounded-md bg-panel px-3 py-1">Drive Partitioning</span><span class="rounded-md bg-panel px-3 py-1">Basic Networking (RJ45/Ethernet)</span></p>
       </div>
       <div class="grid gap-3 py-6 md:grid-cols-[14rem_1fr]">
         <h3 class="font-head font-medium">Developer tools</h3>
@@ -191,11 +243,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{
     <h2 class="font-head text-3xl font-bold">Certifications and academics</h2>
     <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       <div class="rounded-xl bg-panel p-6"><h3 class="font-head font-medium">BS Information Technology</h3><p class="mt-2 text-sm text-mist">Cebu Eastern College, Incorporated. <p class="text-mist">Expected Year graduation: 2027.</p></p></div>
-      <div class="rounded-xl bg-panel p-6"><h3 class="font-head font-medium">Capstone: AEGIS</h3><p class="mt-2 text-sm text-mist">AI diagnostic system with predictive analytics. Ongoing project.</p></div>
+      <div class="rounded-xl bg-panel p-6"><h3 class="font-head font-medium">Capstone: AEGIS</h3><p class="mt-2 text-sm text-mist">Cloud-based diagnostic web app using agent technology. Ongoing project.</p></div>
       <div class="rounded-xl bg-panel p-6"><h3 class="font-head font-medium">Relevant coursework</h3><p class="mt-2 text-sm text-mist">Web systems, database management, networking, human-computer interaction.</p></div>
       <div class="rounded-xl border border-dashed border-line p-6"><h3 class="font-head font-medium">Certification</h3><a href="#" id="cert-link" class="mt-2 text-sm text-cyan hover:underline" data-img="Images/freecodecamp_certificate.jpg">FreeCodeCamp</a></div>
-      <div class="rounded-xl border border-dashed border-line p-6"><h3 class="font-head font-medium">Certification</h3><p class="mt-2 text-sm text-mist">Name, issuer, year.</p></div>
-      <div class="rounded-xl border border-dashed border-line p-6"><h3 class="font-head font-medium">Award or achievement</h3><p class="mt-2 text-sm text-mist">Title, year.</p></div>
+     <!-- <div class="rounded-xl border border-dashed border-line p-6"><h3 class="font-head font-medium">Certification</h3><p class="mt-2 text-sm text-mist">Name, issuer, year.</p></div>
+      <div class="rounded-xl border border-dashed border-line p-6"><h3 class="font-head font-medium">Award or achievement</h3><p class="mt-2 text-sm text-mist">Title, year.</p></div>-->
     </div>
   </div>
 </section>
